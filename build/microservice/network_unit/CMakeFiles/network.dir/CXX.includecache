@@ -1,0 +1,54 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../microservice/logic_unit/include/logic_controller.hpp
+map
+-
+functional
+-
+
+../microservice/network_unit/include/http_server.hpp
+string
+-
+cpprest/http_listener.h
+-
+pplx/pplxtasks.h
+-
+
+../microservice/network_unit/include/microsvc_controller.hpp
+cpprest/http_msg.h
+-
+functional
+-
+http_server.hpp
+../microservice/network_unit/include/http_server.hpp
+logic_controller.hpp
+../microservice/network_unit/include/logic_controller.hpp
+
+../utils/include/network_utils.hpp
+boost/asio.hpp
+-
+string
+-
+
+/home/checor/Qt projects/webapp/microservice/network_unit/src/http_server.cpp
+http_server.hpp
+/home/checor/Qt projects/webapp/microservice/network_unit/src/http_server.hpp
+network_utils.hpp
+/home/checor/Qt projects/webapp/microservice/network_unit/src/network_utils.hpp
+
+/home/checor/Qt projects/webapp/microservice/network_unit/src/microsvc_controller.cpp
+boost/property_tree/json_parser.hpp
+-
+pplx/pplxtasks.h
+-
+microsvc_controller.hpp
+/home/checor/Qt projects/webapp/microservice/network_unit/src/microsvc_controller.hpp
+string
+-
+

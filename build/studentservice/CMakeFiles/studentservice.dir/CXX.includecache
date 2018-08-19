@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../microservice/base_unit/include/micro_service.hpp
+map
+-
+functional
+-
+
+/home/checor/Qt projects/webapp/studentservice/main.cpp
+micro_service.hpp
+/home/checor/Qt projects/webapp/studentservice/micro_service.hpp
+

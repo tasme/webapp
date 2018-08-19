@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="logic"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\microservice\;CMake Files\microservice\base_unit\;CMake Files\microservice\data_unit\;CMake Files\microservice\logic_unit\;CMake Files\microservice\network_unit\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Qt\;CMake Files\..\..\Qt\5.9.1\;CMake Files\..\..\Qt\5.9.1\gcc_64\;CMake Files\..\..\Qt\5.9.1\gcc_64\lib\;CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\;CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5\;CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\;CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Sql\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cpprestsdk\;CMake Files\gameservice\;CMake Files\studentservice\;CMake Files\utils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/checor/Qt projects/webapp/build/microservice/logic_unit"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="logic">
+				<Option output="/home/checor/Qt projects/webapp/build/microservice/logic_unit/liblogic.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/checor/Qt projects/webapp/build/microservice/logic_unit"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/checor/Qt projects/webapp/microservice/logic_unit/include"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../include/c++/7.3.1"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../include/c++/7.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../include/c++/7.3.1/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/clang/6.0.0/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 logic"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="logic/fast">
+				<Option output="/home/checor/Qt projects/webapp/build/microservice/logic_unit/liblogic.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/checor/Qt projects/webapp/build/microservice/logic_unit"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/checor/Qt projects/webapp/microservice/logic_unit/include"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../include/c++/7.3.1"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../include/c++/7.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/7.3.1/../../../../include/c++/7.3.1/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/clang/6.0.0/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 logic/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/checor/Qt\ projects/webapp/build/microservice/logic_unit/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/checor/Qt projects/webapp/microservice/logic_unit/src/logic_controller.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/microservice/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\microservice\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/microservice/base_unit/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\microservice\base_unit\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/microservice/data_unit/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\microservice\data_unit\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/microservice/logic_unit/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\microservice\logic_unit\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/microservice/network_unit/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\microservice\network_unit\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Sql/Qt5SqlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Sql/Qt5Sql_QMYSQLDriverPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Sql/Qt5Sql_QPSQLDriverPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../Qt/5.9.1/gcc_64/lib/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.9.1\gcc_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../../../usr/lib64/cpprestsdk/cpprestsdk-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cpprestsdk\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../../../usr/lib64/cpprestsdk/cpprestsdk-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cpprestsdk\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/../../../../usr/lib64/cpprestsdk/cpprestsdk-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cpprestsdk\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/gameservice/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\gameservice\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/studentservice/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\studentservice\"/>
+		</Unit>
+		<Unit filename="/home/checor/Qt projects/webapp/utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\utils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

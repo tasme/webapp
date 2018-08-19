@@ -1,0 +1,1 @@
+/usr/bin/clang++ -fPIC -std=c++11 -g  -shared -Wl,-soname,libdata.so -o libdata.so CMakeFiles/data.dir/src/sql_driver.cpp.o -Wl,-rpath,/home/checor/Qt/5.9.1/gcc_64/lib /home/checor/Qt/5.9.1/gcc_64/lib/libQt5Sql.so.5.9.1 /home/checor/Qt/5.9.1/gcc_64/lib/libQt5Core.so.5.9.1 

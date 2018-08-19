@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../utils/include/network_utils.hpp
+boost/asio.hpp
+-
+string
+-
+
+/home/checor/Qt projects/webapp/utils/src/network_utils.cpp
+network_utils.hpp
+/home/checor/Qt projects/webapp/utils/src/network_utils.hpp
+

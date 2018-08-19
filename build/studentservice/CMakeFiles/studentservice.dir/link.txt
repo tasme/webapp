@@ -1,0 +1,1 @@
+/usr/bin/clang++  -std=c++11 -g   CMakeFiles/studentservice.dir/main.cpp.o  -o studentservice -Wl,-rpath,"/home/checor/Qt projects/webapp/build/microservice/base_unit" ../microservice/base_unit/libbase.so 

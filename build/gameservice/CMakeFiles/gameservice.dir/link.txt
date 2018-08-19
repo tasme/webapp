@@ -1,0 +1,1 @@
+/usr/bin/clang++  -std=c++11 -g   CMakeFiles/gameservice.dir/src/main.cpp.o  -o gameservice -Wl,-rpath,"/home/checor/Qt projects/webapp/build/microservice/base_unit" ../microservice/base_unit/libbase.so 
