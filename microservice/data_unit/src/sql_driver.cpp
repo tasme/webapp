@@ -6,9 +6,7 @@
 #include <QJsonArray>
 #include <QJsonObject>
 #include <QVariant>
-
 #include "sql_driver.hpp"
-
 sql::SQLDriver::SQLDriver()
 {
 
@@ -60,7 +58,6 @@ QString sql::SQLDriver::execQuery(QString conname, QString querystr)
     QSqlQuery query = QSqlQuery(mConnectionMap[conname]);
     query.setForwardOnly(true);
     query.exec(querystr);
-
     if(!query.isActive()) {
         qDebug() << "Error in executing query: " << query.lastError().text() << "\n";
         return "{ }";
@@ -68,7 +65,6 @@ QString sql::SQLDriver::execQuery(QString conname, QString querystr)
 
     QJsonDocument  json;
     QJsonArray     recordsArray;
-
     while(query.next()) {
         QJsonObject recordObject;
         for(int i=0; i < query.record().count(); i++)
@@ -80,5 +76,4 @@ QString sql::SQLDriver::execQuery(QString conname, QString querystr)
     return QString(json.toJson());
 
 }
-
 
