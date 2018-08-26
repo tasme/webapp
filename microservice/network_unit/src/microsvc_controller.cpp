@@ -31,21 +31,20 @@ server::MicroserviceController::~MicroserviceController()
 void server::MicroserviceController::intercept(http_request message) {
     http_response response;
     response.headers().add(U("Access-Control-Allow-Origin"), U("*"));
-    if(message.method() == methods::GET) {
-        auto handler = mServiceLogic.getHandlerByName("GET");
+    if (message.method() == methods::POST) {
+        auto handler = mServiceLogic.getHandlerByName("POST");
         if (handler) {
-            pplx::create_task([message, handler]() -> std::pair<std::string, int>
-            {
-                return handler(message.to_string());
-            }
-            ).then([message](std::pair<std::string, int> pair)
-            {
+            message.
+             extract_json().
+             then([=](web::json::value msg) {
+                auto repl = handler(msg.to_string());
+
                 http_response response;
                 response.headers().add(U("Access-Control-Allow-Origin"), U("*"));
-                response.set_status_code(pair.second);
-                response.set_body(pair.first);
+                response.set_status_code(repl.second);
+                response.set_body(repl.first);
                 message.reply(response);
-            });
+             });
         }
         else {
             response.set_status_code(status_codes::NotImplemented);

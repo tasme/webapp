@@ -1,25 +1,22 @@
-/home/checor/Qt projects/webapp/build/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/CMakeFiles/edit_cache.dir
-/home/checor/Qt projects/webapp/build/utils/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/utils/CMakeFiles/utils.dir
-/home/checor/Qt projects/webapp/build/utils/CMakeFiles/edit_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/CMakeFiles/edit_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/data_unit/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/data_unit/CMakeFiles/data.dir
-/home/checor/Qt projects/webapp/build/microservice/data_unit/CMakeFiles/edit_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/logic_unit/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/logic_unit/CMakeFiles/logic.dir
-/home/checor/Qt projects/webapp/build/microservice/logic_unit/CMakeFiles/edit_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/network_unit/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/network_unit/CMakeFiles/network.dir
-/home/checor/Qt projects/webapp/build/microservice/network_unit/CMakeFiles/edit_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/base_unit/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/microservice/base_unit/CMakeFiles/base.dir
-/home/checor/Qt projects/webapp/build/microservice/base_unit/CMakeFiles/edit_cache.dir
-/home/checor/Qt projects/webapp/build/gameservice/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/gameservice/CMakeFiles/gameservice.dir
-/home/checor/Qt projects/webapp/build/gameservice/CMakeFiles/edit_cache.dir
-/home/checor/Qt projects/webapp/build/studentservice/CMakeFiles/rebuild_cache.dir
-/home/checor/Qt projects/webapp/build/studentservice/CMakeFiles/studentservice.dir
-/home/checor/Qt projects/webapp/build/studentservice/CMakeFiles/edit_cache.dir
+/home/zee123/webapp/build/CMakeFiles/rebuild_cache.dir
+/home/zee123/webapp/build/CMakeFiles/edit_cache.dir
+/home/zee123/webapp/build/utils/CMakeFiles/rebuild_cache.dir
+/home/zee123/webapp/build/utils/CMakeFiles/utils.dir
+/home/zee123/webapp/build/utils/CMakeFiles/edit_cache.dir
+/home/zee123/webapp/build/microservice/CMakeFiles/rebuild_cache.dir
+/home/zee123/webapp/build/microservice/CMakeFiles/edit_cache.dir
+/home/zee123/webapp/build/microservice/data_unit/CMakeFiles/rebuild_cache.dir
+/home/zee123/webapp/build/microservice/data_unit/CMakeFiles/data.dir
+/home/zee123/webapp/build/microservice/data_unit/CMakeFiles/edit_cache.dir
+/home/zee123/webapp/build/microservice/logic_unit/CMakeFiles/rebuild_cache.dir
+/home/zee123/webapp/build/microservice/logic_unit/CMakeFiles/logic.dir
+/home/zee123/webapp/build/microservice/logic_unit/CMakeFiles/edit_cache.dir
+/home/zee123/webapp/build/microservice/network_unit/CMakeFiles/rebuild_cache.dir
+/home/zee123/webapp/build/microservice/network_unit/CMakeFiles/network.dir
+/home/zee123/webapp/build/microservice/network_unit/CMakeFiles/edit_cache.dir
+/home/zee123/webapp/build/microservice/base_unit/CMakeFiles/rebuild_cache.dir
+/home/zee123/webapp/build/microservice/base_unit/CMakeFiles/base.dir
+/home/zee123/webapp/build/microservice/base_unit/CMakeFiles/edit_cache.dir
+/home/zee123/webapp/build/threadservice/CMakeFiles/rebuild_cache.dir
+/home/zee123/webapp/build/threadservice/CMakeFiles/threadservice.dir
+/home/zee123/webapp/build/threadservice/CMakeFiles/edit_cache.dir

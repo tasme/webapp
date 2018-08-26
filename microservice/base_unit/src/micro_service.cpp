@@ -8,6 +8,7 @@
 #include "logic_controller.hpp"
 #include "microsvc_controller.hpp"
 
+
 class microservice::MicroService::Implementation {
 public:
     Implementation() : mNetwork(mLogic) {}

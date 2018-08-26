@@ -1,1 +1,1 @@
-/usr/bin/clang++ -fPIC -std=c++17 -g  -shared -Wl,-soname,liblogic.so -o liblogic.so CMakeFiles/logic.dir/src/logic_controller.cpp.o 
+/usr/bin/g++ -fPIC -std=c++17  -shared -Wl,-soname,liblogic.so -o liblogic.so CMakeFiles/logic.dir/src/logic_controller.cpp.o 

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/checor/Qt projects/webapp/utils/src/network_utils.cpp" "/home/checor/Qt projects/webapp/build/utils/CMakeFiles/utils.dir/src/network_utils.cpp.o"
+  "/home/zee123/webapp/utils/src/network_utils.cpp" "/home/zee123/webapp/build/utils/CMakeFiles/utils.dir/src/network_utils.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
