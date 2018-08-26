@@ -1,0 +1,1 @@
+/usr/bin/g++     CMakeFiles/threadservice.dir/main.cpp.o  -o threadservice -Wl,-rpath,/usr/local/lib:/home/zee123/webapp/build/microservice/base_unit /usr/local/lib/libcpprest.so.2.10 ../microservice/base_unit/libbase.so -lpthread /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 
