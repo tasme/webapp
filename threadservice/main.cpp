@@ -20,36 +20,41 @@ std::pair<std::string, int> postHandler(std::string msg) {
     web::json::value json = web::json::value::parse(msg);
     //writeFile(json.at(U("type")).as_string());
     std::string type = json.at(U("type")).as_string();
-    if (type == "get_posts") {
-        std::string thread_id = json.at(U("thread_id")).as_string();
-        std::string q = "SELECT * FROM posts WHERE ThreadId="+thread_id;
-        writeFile(q);
-        message = execSqlQuery("Admin", q);
-        web::json::value dbJson = web::json::value::parse(message);
-        writeFile(dbJson.at(0).at(U("Text")).as_string());
-    } else if (type == "add_post") {
-        std::string user_id = json.at(U("user_id")).as_string();
+    if (type == "getPosts") {
+        int threadId = json.at(U("threadId")).as_integer();
+        std::string q = "SELECT * FROM posts WHERE ThreadId="+std::to_string(threadId);
+        //writeFile(q);
+        message = execSqlQuery("Regular", q);
+        //web::json::value dbJson = web::json::value::parse(message);
+        //writeFile(dbJson.at(0).at(U("Text")).as_string());
+    } else if (type == "addPost") {
+        std::string userId = json.at(U("userId")).as_string();
         std::string text = json.at(U("text")).as_string();
-        std::string thread_id = json.at(U("thread_id")).as_string();
-        message = execSqlQuery("Admin", "INSERT INTO posts (UserId, Text, ThreadId) VALUES ('"+user_id+"', '"+text+"', '"+thread_id+"')");
-    } else if (type == "get_last_threads") {
-        message = execSqlQuery("Regular", "SELECT * FROM `threads` ORDER BY `threads`.`Date` DESC LIMIT 100");
+        int  threadId = json.at(U("threadId")).as_integer();
+        message = execSqlQuery("Regular", "INSERT INTO posts (UserId, Text, ThreadId) VALUES ('"+userId+"', '"+text+"', "+std::to_string(threadId)+")");
+    } else if (type == "getLastThreads") {
+        std::cout << "test1\n";
+        //message = execSqlQuery("Regular", "SELECT * FROM `threads` ORDER BY `threads`.`Date` DESC LIMIT 100");
+        message = execSqlQuery("Regular", "SELECT t.*, (select count(*) from posts p where t.ThreadId = p.ThreadId group by p.ThreadId) as PostCount FROM  threads t ORDER BY t.`Date` DESC LIMIT 100");
+        std::cout << "test2\n";
         writeFile(message);
-    } else if (type == "add_thread") {
-        std::string threadname = json.at(U("threadname")).as_string();
-        std::string threadtext = json.at(U("threadtext")).as_string();
-        std::string user_id = json.at(U("user_id")).as_string();
-        std::string sub_id = json.at(U("sub_id")).as_string();
-        message = execSqlQuery("Regular", "INSERT INTO `threads` (`ThreadId`, `Name`, `Text`, `UserId`, `Date`, `SubId`) VALUES (NULL, '"+threadname+"', '"+threadtext+"', '"+user_id+"', CURRENT_TIMESTAMP, '"+sub_id+"')");
-    } else if (type == "get_subs") {
+        std::cout << "test3\n";
+    } else if (type == "addThread") {
+        std::string threadName = json.at(U("threadName")).as_string();
+        std::string threadText = json.at(U("threadText")).as_string();
+        std::string userId = json.at(U("userId")).as_string();
+        int subId = json.at(U("subId")).as_integer();
+        message = execSqlQuery("Regular", "INSERT INTO `threads` (`Name`, `Text`, `UserId`, `Date`, `SubId`) VALUES ('"+threadName+"', '"+threadText+"', '"+userId+"', CURRENT_TIMESTAMP, "+std::to_string(subId)+")");
+        message = execSqlQuery("Regular", "SELECT LAST_INSERT_ID() as insertedId;");
+    } else if (type == "getSubs") {
         message = execSqlQuery("Regular", "SELECT * FROM `subjects`");
-    } else if (type == "get_thread") {
-        std::string thread_id = json.at(U("thread_id")).as_string();
-        message = execSqlQuery("Regular", "SELECT * FROM threads WHERE ThreadId="+thread_id);
-    } else if (type == "get_last_threads_from_sub") {
-        std::string sub_id = json.at(U("sub_id")).as_string();
-        std::string thread_ammount = json.at(U("thread_ammount")).as_string();
-        message = execSqlQuery("Regular", "select t.*, (select count(*) from posts p where t.ThreadId = p.ThreadId group by p.ThreadId) as PostCount from threads t Where t.SubId = "+sub_id+" ORDER BY t.Date DESC LIMIT "+thread_ammount);
+    } else if (type == "getThread") {
+        int threadId = json.at(U("threadId")).as_integer();
+        message = execSqlQuery("Regular", "SELECT * FROM threads WHERE ThreadId="+std::to_string(threadId));
+    } else if (type == "getLastThreadsFromSub") {
+        int subId = json.at(U("subId")).as_integer();
+        int threadAmmount = json.at(U("threadAmmount")).as_integer();
+        message = execSqlQuery("Regular", "select t.*, (select count(*) from posts p where t.ThreadId = p.ThreadId group by p.ThreadId) as PostCount from threads t Where t.SubId = "+std::to_string(subId)+" ORDER BY t.Date DESC LIMIT "+std::to_string(threadAmmount));
     }
     int code = 200;
     return {message, code};
