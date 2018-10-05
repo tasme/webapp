@@ -7,6 +7,7 @@
 #include <QJsonObject>
 #include <QVariant>
 #include "sql_driver.hpp"
+#include "QString"
 sql::SQLDriver::SQLDriver()
 {
 
@@ -20,8 +21,9 @@ sql::SQLDriver::~SQLDriver()
 
 void sql::SQLDriver::initConnection(QString host, QString dbname)
 {
-    mConnectionMap["Regular"] = connect("Regular", host, dbname, "user", "user");
-    mConnectionMap["Admin"] = connect("Admin", host, dbname, "root", "ech123");
+
+    mConnectionMap["Regular"] = connect("Regular", host,dbname, "user", "user");
+    mConnectionMap["Admin"] = connect("Admin",host, dbname, "newuser", "password");
 
 
     for(auto db : mConnectionMap.keys())

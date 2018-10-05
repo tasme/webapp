@@ -47,7 +47,8 @@ std::pair<std::string, int> postHandler(std::string msg) {
         message = execSqlQuery("Regular", "INSERT INTO `threads` (`Name`, `Text`, `UserId`, `Date`, `SubId`) VALUES ('"+threadName+"', '"+threadText+"', '"+userId+"', CURRENT_TIMESTAMP, "+std::to_string(subId)+")");
         message = execSqlQuery("Regular", "SELECT LAST_INSERT_ID() as insertedId;");
     } else if (type == "getSubs") {
-        message = execSqlQuery("Regular", "SELECT * FROM `subjects`");
+       // message = execSqlQuery("Regular", "SELECT * FROM `subjects`");
+        message="hello world";
     } else if (type == "getThread") {
         int threadId = json.at(U("threadId")).as_integer();
         message = execSqlQuery("Regular", "SELECT * FROM threads WHERE ThreadId="+std::to_string(threadId));

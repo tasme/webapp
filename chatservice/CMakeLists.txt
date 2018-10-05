@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.10)
 
-project(threadservice)
+project(chatservice)
 
 # set(CMAKE_CXX_FLAGS "-std=c++11")
 find_package(cpprestsdk REQUIRED)
